@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Name</title>
+    <script>
+        function information() {
+            const firstName = document.getElementById("first_name").value;
+            const lastName = document.getElementById("last_name").value;
+            const country = document.getElementById("country").value;
+            const city = document.getElementById("city").value;
+            const state = document.getElementById("state").value;
+            document.getElementById("output").innerHTML ="Hello"+" "+ firstName + " " + lastName+" "+" you live in"+" "+country+" "+ city+" "+state;
+        }
+    </script>
+</head>
+
+<body>
+    First Name: <input type="text" id="first_name"><br>
+    Last Name: <input type="text" id="last_name"><br>
+    Country: <input type="text" id="country"><br>
+    City: <input type="text" id="city"><br>
+    State: <input type="text" id="state"><br>
+    <input type="button" value="Your full name is " onclick="information()">
+    <div id="output"></div>
+</body>
+
+</html>
