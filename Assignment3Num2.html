@@ -1,0 +1,20 @@
+<!DOCTYPE HTML> 
+<html lang="en-us">
+<head> <meta charset="utf-8"> 
+<title>Applied Scripture</title>
+<script>
+function applyScripture() {
+var name = document.getElementById('nameInput').value;
+var scripture = "I, " + name +","+" "  + "Came from Ethiopia!";
+  document.getElementById('outputDiv').innerHTML = scripture; 
+}
+</script>
+ </head>
+ <body>
+ Please enter your name: <input type="text" id="nameInput">
+ <button type="button" onclick="applyScripture()">ClickMe
+ </button> 
+ <div id="outputDiv"></div> 
+</body>
+</html>
+
